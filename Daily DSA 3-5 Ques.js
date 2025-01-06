@@ -2507,3 +2507,67 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(findLength(5432109))
+
+
+// Q111. Use Recursion to Create a Range of Numbers.
+
+// const rangeNumbers = (startNum, endNum) => {
+//     if(startNum === endNum) {
+//         return [startNum]
+//     } else {
+//         const result = rangeNumbers(startNum + 1, endNum)
+//         result.unshift(startNum)
+//         return result;
+//     }
+// }
+
+// console.log(rangeNumbers(1, 5))
+
+// Q112. Stack Implementation
+
+// let stack = []
+// let currentSize = stack.length
+
+// const customPush = (newValue) => {
+//     stack[currentSize] = newValue
+//     currentSize = currentSize + 1
+// }
+
+// customPush(10)
+// customPush(20)
+// customPush(30)
+
+// const customPop = () => {
+//     currentSize = currentSize - 1
+//     stack.length = currentSize
+// }
+
+// customPop()
+
+// console.log(stack)
+
+
+// Q113. Queue Implementation
+
+// let queue = []
+// let currentSize = queue.length
+
+// const enQue = (newValue) => {
+//     queue[currentSize] = newValue
+//     currentSize = currentSize + 1
+// }
+
+// enQue(10)
+// enQue(20)
+// enQue(30)
+
+// const deQue = () => {
+//     for(let x = 0; x < queue.length; x++) {
+//         queue[x] = queue[x + 1]
+//     }
+//     queue.length = queue.length - 1
+//     return queue
+// }
+
+// deQue()
+// console.log(queue)
