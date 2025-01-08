@@ -2627,3 +2627,47 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(Operations([10, 20, 30, 40, 50]))
+
+
+// Q116. Binary Search with Iterative approach
+
+// let data = [8, 17, 29, 50]
+// let find = 29
+
+// const BinarySearch = (array, start, end) => {
+//     for(start = 0; start <= end;) {
+//         let mid = Math.floor((start + end) / 2)
+
+//         if(array[mid] === find) {
+//             position = mid
+//             return position
+//         } else if(array[mid] < find) {
+//             start = mid + 1
+//         } else {
+//             end = mid - 1
+//         }
+//     }
+// }
+
+// console.log(BinarySearch(data, 0, data.length-1))
+
+
+// Q117. Selection Sorting
+
+const SelectionSorting = (array) => {
+    let minId;
+    for(let x = 0; x < array.length; x++) {
+        minId = x
+        for(let y = x + 1; y < array.length; y++) {
+            if(array[y] < array[minId]) {
+                minId = y
+            }
+        }
+        let temp = array[minId]
+        array[minId] = array[x]
+        array[x] = temp
+    }
+    return array
+}
+
+console.log(SelectionSorting([20, 12, 53, 5]))
