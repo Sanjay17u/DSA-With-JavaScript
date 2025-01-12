@@ -2801,3 +2801,109 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(ReverseNumber(12345))
+
+// Q124. Reverse a String.
+
+// const Reverse = (string) => {
+//     let reveresed = ''
+//     for(let x = string.length-1; x >= 0; x--) {
+//         reveresed = reveresed + string[x]
+//     }
+//     return reveresed
+// }
+
+// console.log(Reverse('sanjay'))
+
+// Q125. Reverse an array
+
+// const Reverse = (array) => {
+//     let reveresed = []
+//     for(let x = array.length - 1; x >= 0; x--) {
+//         reveresed[reveresed.length] = array[x]
+//     }
+//     return reveresed
+// }
+
+// console.log(Reverse([1,2,3,4,5]))
+
+// Q126. Reverse a Num
+
+// const ReverseNumber = (num, reveresed = 0) => {
+//     if(num === 0) {
+//         return reveresed
+//     }
+    
+//     let lastDigit = num % 10
+//     reveresed = reveresed * 10 + lastDigit
+//     return ReverseNumber(Math.floor(num / 10), reveresed)
+// }
+
+// console.log(ReverseNumber(12345))
+
+// Q127. Reverse a Num 
+
+// const ReverseNumber = (num) => {
+//     num = num.toString()
+//     let reveresed = ''
+//     for(let x = num.length - 1; x >= 0; x--) {
+//         reveresed = reveresed + num[x]
+//     }
+//     return Number(reveresed)
+// }
+
+// console.log(ReverseNumber(12345))
+
+// Q128. Merge And Sort
+
+// const MergeSort = (array) => {
+//     let data1 = [5,2,9,3,6]
+//     let data2 = [50,20,90,30,60]
+
+//     for(let x = 0; x < data1.length; x++) {
+//         array[array.length] = data1[x]
+//     }
+
+//     for(let x = 0; x < data2.length; x++) {
+//         array[array.length] = data2[x]
+//     }
+
+//     for(let x = 0; x < array.length; x++) {
+//         for(let y = 0; y < array.length; y++) {
+//             if(array[y] > array[y + 1]) {
+//                 let temp = array[y]
+//                 array[y] = array[y + 1]
+//                 array[y + 1] = temp
+//             }
+//         }
+//     }
+//     return array
+// }
+
+// console.log(MergeSort([]))
+
+// Q129. Insertion and Deletion Operations
+
+// const Operations = (array) => {
+//     let elementDelete = 30
+//     let elementInsert = 60
+
+//     for(let x = 0; x < array.length; x++) {
+//         if(array[x] === elementDelete) {
+//             position = x
+//             break
+//         }
+//     }
+
+//     for(let x = position; x < array.length; x++) {
+//         array[x] = array[x + 1]
+//     }
+//     array.length = array.length - 1
+
+//     for(let x = array.length - 1; x >= position; x--) {
+//         array[x + 1] = array[x]
+//     }
+//     array[position] = elementInsert
+//     return array
+// }
+
+// console.log(Operations([10, 20, 30, 40, 50]))
