@@ -2907,3 +2907,24 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(Operations([10, 20, 30, 40, 50]))
+
+// 130.Selection Sorting in JS
+
+const SelectionSorting = (array) => {
+    let minId
+    for(let x = 0; x < array.length; x++) {
+        minId = x
+
+        for(let y = x + 1; y < array.length; y++) {
+            if(array[y] < array[minId]) {
+                minId = y
+            }
+        }
+        let temp = array[minId]
+        array[minId] = array[x]
+        array[x] = temp
+    }
+    return array
+}
+
+console.log(SelectionSorting([20, 12, 53, 5]))
