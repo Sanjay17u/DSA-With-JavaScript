@@ -1366,7 +1366,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     let elementDelete = 30
 //     let elementInsert = 60
 
-//     // Deletion Operation
+//     // Deletion Operations
 //     for(let x = 0; x < array.length; x++) {
 //         if(array[x] === elementDelete) {
 //             position = x
@@ -1379,7 +1379,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     }
 //     array.length = array.length - 1
 
-//     // Insertion Operation
+//     // Insertion Operations
 //     for(let x = array.length - 1; x >= position; x--) {
 //         array[x + 1] = array[x]
 //     }
@@ -1391,7 +1391,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // Q63. Reverse a String
 
-// const Reverse = (stringg) => {
+// const Reverse = (string) => {
 //     function customSplit(str) {
 //         let result = [];
 //         let temp = '';
@@ -1485,7 +1485,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     let elementDelete = 30
 //     let elementInsert = 60
 
-//     // Deletion Operation
+//     // Deletion Operations
 //     for(let x = 0; x < array.length; x++) {
 //         if(array[x] === elementDelete) {
 //             position = x
@@ -1498,7 +1498,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     }
 //     array.length = array.length - 1
 
-//     // Insertion Operation
+//     // Insertion Operations
 //     for(let x = array.length - 1; x >= position; x--) {
 //         array[x + 1] = array[x]
 //     }
@@ -1631,10 +1631,10 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // Q75. Insertion and Deletion Operations.
 
-// const Operation = (array) =>{
+// const Operations = (array) =>{
 //     let elementDelete = 30
 //     let elementInsert = 60
-//     // Deletion Operation
+//     // Deletion Operations
 //     for(let x = 0; x < array.length; x++) {
 //         if(array[x] == elementDelete) {
 //             position = x
@@ -1647,7 +1647,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     }
 //     array.length = array.length - 1
 
-//     // Insertion Operation
+//     // Insertion Operations
 //     for(let x = array.length - 1; x >= position; x--) {
 //         array[x + 1] = array[x]
 //     }
@@ -1655,7 +1655,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     return array
 // }
 
-// console.log(Operation([10,20,30,40,50]))
+// console.log(Operations([10,20,30,40,50]))
 
 // Q76. stack Implementation
 
@@ -1748,7 +1748,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // const Operations = (array) => {
 //     let elementDelete = 30
 //     let elementInsert = 60
-//     // Delete Operation
+//     // Delete Operations
 //     for(let x = 0; x < array.length; x++) {
 //         if(array[x] == elementDelete) {
 //             position = x
@@ -1761,7 +1761,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     }
 //     array.length = array.length - 1
 
-//     // Insertion Operation
+//     // Insertion Operations
 //     for(let x = array.length - 1; x >= position; x--) {
 //         array[x + 1] = array[x]
 //     }
@@ -2096,7 +2096,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // deQue()
 // console.log(Queue)
 
-//Q93. Insert and Delete Operation
+//Q93. Insert and Delete Operations
 
 // const Operations = (array) => {
 //     let elementDelete = 30
@@ -2249,7 +2249,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(Merge([]))
 
 
-// Q99. Instertion and Deletion Operation
+// Q99. Instertion and Deletion Operations
 
 // const Operations = (array) => {
 //     let elementDelete = 30
@@ -2413,7 +2413,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(Merge([]))
 
-// Q106. Deletion And Insertion Operation
+// Q106. Deletion And Insertion Operations
 
 // const Operations = (array) => {
 //     let elementDelete = 30
@@ -2908,7 +2908,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(Operations([10, 20, 30, 40, 50]))
 
-// 130.Selection Sorting in JS
+// Q130.Selection Sorting in JS
 
 // const SelectionSorting = (array) => {
 //     let minId
@@ -2920,6 +2920,146 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //                 minId = y
 //             }
 //         }
+//         let temp = array[minId]
+//         array[minId] = array[x]
+//         array[x] = temp
+//     }
+//     return array
+// }
+
+// console.log(SelectionSorting([20, 12, 53, 5]))
+
+
+// Q131. Merge Sorting 
+
+// const MergeSort = (array) => {
+//     let data1 = [5,2,9,3,6]
+//     let data2 = [50,20,90,30,60]
+
+//     for(let x = 0; x < data1.length; x++) {
+//         array[array.length] = data1[x]
+//     }
+
+//     for(let x = 0; x < data2.length; x++) {
+//         array[array.length] = data2[x]
+//     }
+
+//     for(let x = 0; x < array.length; x++) {
+//         for(let y = 0; y < array.length; y++) {
+//             if(array[y] > array[y + 1]) {
+//                 let temp = array[y]
+//                 array[y] = array[y + 1]
+//                 array[y + 1] = temp 
+//             }
+//         }
+//     }
+//     return array
+// }
+
+// console.log(MergeSort([]))
+
+
+// Q132. Insertion and Deletion Operations
+
+// const Operations = (array) => {
+//     let elementDelete = 30
+//     let elementInsert = 60
+    
+//     for(let x = 0; x < array.length; x++) {
+//         if(array[x] == elementDelete) {
+//             position = x
+//             break
+//         }
+//     }
+
+//     for(let x = position; x < array.length; x++) {
+//         array[x] = array[x + 1]
+//     }
+//     array.length = array.length - 1
+
+//     for(let x = array.length - 1; x >= position; x--) {
+//         array[x + 1] = array[x]
+//     }
+
+//     array[position] = elementInsert
+//     return array
+// }
+
+// console.log(Operations([10, 20, 30, 40, 50]))
+
+
+// Q133. Merge and Sort 
+
+// const MergeSort = (array) => {
+//     let data1 = [5,2,9,3,6]
+//     let data2 = [50,20,90,30,60]
+
+//     for(let x = 0; x < data1.length; x++) {
+//         array[array.length] = data1[x]
+//     }
+
+//     for(let x = 0; x < data2.length; x++) {
+//         array[array.length] = data2[x]
+//     }
+
+//     for(let x = 0; x < array.length; x++) {
+//         for(let y = 0; y < array.length; y++) {
+//             if(array[y] > array[y + 1]) {
+//                 let temp = array[y]
+//                 array[y] = array[y + 1]
+//                 array[y + 1] = temp
+//             }
+//         }
+//     }
+
+//     return array
+// }
+
+// console.log(MergeSort([]))
+
+
+// Q134. Insertion and Deletion Operations
+
+// const Operations = (array) => {
+//     let elementDelete = 30
+//     let elementInsert = 60
+//     let position;
+
+//     for(let x = 0; x < array.length; x++) {
+//         if(array[x] == elementDelete) {
+//             position = x
+//         }
+//     }
+
+//     for(let x = position; x < array.length; x++) {
+//         array[x] = array[x + 1]
+//     }
+
+//     array.length = array.length - 1
+
+//     for(let x = array.length - 1; x >= position; x--) {
+//         array[x + 1] = array[x]
+//     }
+//     array[position] = elementInsert
+//     return array
+// }
+
+// console.log(Operations([10, 20, 30, 40, 50]))
+
+
+// Q135. Selection Sort in JS
+
+// const SelectionSorting = (array) => {
+//     let minId;
+//     for(let x = 0; x < array.length; x++) {
+//         minId = x
+
+//         for(let y = x + 1; y < array.length; y++) {
+//             if(array[y] < array[minId]) {
+//                 minId = y
+//             }
+//         }
+
 //         let temp = array[minId]
 //         array[minId] = array[x]
 //         array[x] = temp
