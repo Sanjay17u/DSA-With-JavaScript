@@ -52,11 +52,11 @@
 /* Q5. Insert an Element at the End of the Array:
 Array = [1,2,3] element = 4 Output: [1,2,3,4] */
 
-// const Shift = (arr) => {
-//     let arrPosition = arr.length
+// const Shift = (array) => {
+//     let arrPosition = array.length
 //     let shiftELM = 4
-//     arr[arrPosition] = shiftELM
-//     return arr
+//     array[arrPosition] = shiftELM
+//     return array
 
 // }
 
@@ -899,7 +899,7 @@ no even numbers are found, print a message stating that no even numbers were fou
 
 // console.log(missing([1, 2, 4, 6, 3, 7, 8]))
 
-// Q40. You are given an array of integers arr[]. Your task is to reverse the given array.
+// Q40. You are given an array of integers array[]. Your task is to reverse the given array.
 
 // const reverse = (array) => {
 //     let reveresed = []
@@ -910,7 +910,7 @@ no even numbers are found, print a message stating that no even numbers were fou
 
 // console.log(reverse([1, 4, 3, 2, 6, 5]))
 
-/* Q41. Given an array arr. Your task is to find the minimum and maximum elements in the array.
+/* Q41. Given an array array. Your task is to find the minimum and maximum elements in the array.
     Note: Return an array that contains two elements the first one will be a minimum element and the second will be a maximum of an array */
 
 // const minmax = (array) => {
@@ -928,7 +928,7 @@ no even numbers are found, print a message stating that no even numbers were fou
 
 // console.log(minmax([3, 2, 1, 56, 10000, 167]))
 
-// Q42. Given an array arr[] and an integer k where k is smaller than the size of the array, the task is to find the kth smallest element in the given array. K = 3
+// Q42. Given an array array[] and an integer k where k is smaller than the size of the array, the task is to find the kth smallest element in the given array. K = 3
 
 // const knum = (array) => {
 //     min = array[0]
@@ -950,7 +950,7 @@ no even numbers are found, print a message stating that no even numbers were fou
 
 // console.log(knum([7, 10, 4, 3, 20, 15]))
 
-// Q43.Given an array, arr of n integers, and an integer element x, find whether element x is present in the array. Return the index of the first occurrence of x in the array, or -1 if it doesn't exist.
+// Q43.Given an array, array of n integers, and an integer element x, find whether element x is present in the array. Return the index of the first occurrence of x in the array, or -1 if it doesn't exist.
 
 // const search = (array) => {
 //     let element = 4
@@ -988,7 +988,7 @@ no even numbers are found, print a message stating that no even numbers were fou
 
 // console.log(Merge([]))
 
-// Q45. Given an array arr[] containing only 0s, 1s, and 2s. Sort the array in ascending order.
+// Q45. Given an array array[] containing only 0s, 1s, and 2s. Sort the array in ascending order.
 
 // const sorted = (array) => {
 //     for(let x = 0; x < array.length; x++) {
@@ -1060,7 +1060,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(findUnion([]))
 
-// Q48. Given an array arr, rotate the array by one position in clock-wise direction.
+// Q48. Given an array array, rotate the array by one position in clock-wise direction.
 
 // const rotate = (array) => {
 //     lastELM = array[array.length - 1]
@@ -3134,3 +3134,114 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(ReverseArray([1,2,3,4,5]))
+
+// Q141. Selection Sort in JS
+
+// const SelectionSorting = (array) => {
+//     let minId
+//     for(let x = 0; x < array.length; x++) {
+//         minId = x
+
+//         for(let y = x + 1; y < array.length; y++) {
+//             if(array[y] < array[minId]) {
+//                 minId = y
+//             }
+//         }
+
+//         let temp = array[minId]
+//         array[minId] = array[x]
+//         array[x] = temp
+//     }
+//     return array
+// }
+
+// console.log(SelectionSorting([20, 12, 53, 5]))
+
+
+// Q142. Binary Search Iterative Approach in JS
+
+// let data = [2, 17, 28, 53]
+// let find = 53
+
+// const BinarySearch = (array, start, end) => {
+//     let position;
+//     for(start = 0; start <= end;) {
+//         let minId = Math.floor((start + end) / 2)
+
+//         if(array[minId] === find) {
+//             position = minId
+//             return position
+//         } else if (array[minId] < find) {
+//             start = minId + 1
+//         } else {
+//             end = minId - 1
+//         }
+//     } 
+//     return position
+// }
+
+// console.log(BinarySearch(data, 0, data.length - 1))
+
+
+// Q143. Binary Search Recursive Approach in JS
+
+// let data = [2, 17, 28, 53]
+// let find = 53
+
+// const BinarySearch = (array, start, end) => {
+//     if(start > end) {
+//         return - 1
+//     }
+
+//    let minId = Math.floor((start + end) / 2)
+
+//    if(array[minId] === find) {
+//         return minId
+//     } else if(array[minId] < find) {
+//         return BinarySearch(array, minId + 1, end)
+//     } else {
+//         return BinarySearch(array, start, minId - 1)
+//     }
+// }
+
+// console.log(BinarySearch(data, 0, data.length - 1))
+
+// Q144. Insertion Sort in JS
+
+// const InsertionSort = (array) => {
+//     for(let x = 0; x < array.length; x++) {
+//         let Current = array[x]
+//         let y = x - 1
+
+//         while(y >= 0 && array[y] > Current) {
+//             array[y + 1] = array[y]
+//             y = y - 1
+//         }
+
+//         array[y + 1] = Current
+//     }
+//     return array
+// }
+
+// console.log(InsertionSort([5, 2, 9, 1, 5, 6]))
+
+
+// Q145. Find Even Value and Make Double Of them and Count Length Manually.
+
+// const EvenValue = (array) => {
+//     let newArray = []
+//     let count = 0
+//     for(let x = 0; x < array.length; x++) {
+//         if(array[x] % 2 == 0) {
+//             newArray[newArray.length] = (array[x] * 2)
+//             count++
+//         }
+//     }
+//     return newArray
+// }
+
+// console.log(EvenValue([10, 19, 6, 18, 45, 68, 90, 35, 100]))
+
+
+// Q146. Bubble Sorting with Recursion in JS.
+
