@@ -3352,3 +3352,30 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(ReverseNumber(12345))
+
+
+// Q152. Check String Anagram
+
+// const stringAnagram = (string1, string2) => {
+//     let objectString = {}
+//     if (string1.length !== string2.length) {
+//         return false;
+//     }
+    
+//     string1 = string1.toLowerCase()
+//     string2 = string2.toLowerCase()
+    
+//     for(char of string1) {
+//         objectString[char] = (objectString[char] || 0) + 1
+//     }
+//     for(char of string2) {
+//         if (!objectString[char]) {
+//             return false;
+//         } else {
+//             objectString[char]--
+//         }
+//     }
+//     return true;
+// }
+
+// console.log(stringAnagram('Hello', 'ehllo'))
