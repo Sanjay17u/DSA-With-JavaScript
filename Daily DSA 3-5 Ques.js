@@ -75,7 +75,7 @@ Array = [1,2,3] element = 4 Output: [1,2,3,4] */
 
 // console.log(DeleteElement([1,2,3,4,5]))
 
-// Q7. Leniar Search / Search Element
+// Q7. Linear Search / Search Element
 
 // const searchElement = (array) => {
 //     let search = 3
@@ -168,7 +168,7 @@ Input: [1, 2, 3, 4, 5] */
 /* Q13. Count Occurrences of an Element in an Array [2, 3, 3, 5, 3, 7, 8]
 Element: 3 */
 
-// const dupplicate = (array) => {
+// const duplicate = (array) => {
 //     let Occurrences = 0
 //     let element = 3
 //     for(let x = 0; x <= array.length; x++) {
@@ -178,7 +178,7 @@ Element: 3 */
 //     } return Occurrences
 // }
 
-// console.log(dupplicate([2, 3, 3, 5, 3, 7, 8]))
+// console.log(duplicate([2, 3, 3, 5, 3, 7, 8]))
 
 // Q14. Find The 2nd Largest Element in an Array [3, 1, 4, 5, 2, 9, 7]
 
@@ -713,7 +713,7 @@ no even numbers are found, print a message stating that no even numbers were fou
 
 // console.log(arraySorting([20,55,43,75,15,19,60]))
 
-// Q32. Indirect Recurssion
+// Q32. Indirect Recursion
 
 // let money = 100
 // let apple = 0
@@ -902,10 +902,10 @@ no even numbers are found, print a message stating that no even numbers were fou
 // Q40. You are given an array of integers array[]. Your task is to reverse the given array.
 
 // const reverse = (array) => {
-//     let reveresed = []
+//     let reversed = []
 //     for(let x = array.length-1; x >= 0; x--) {
-//         reveresed[reveresed.length] = array[x]
-//     } return reveresed
+//         reversed[reversed.length] = array[x]
+//     } return reversed
 // }
 
 // console.log(reverse([1, 4, 3, 2, 6, 5]))
@@ -930,7 +930,7 @@ no even numbers are found, print a message stating that no even numbers were fou
 
 // Q42. Given an array array[] and an integer k where k is smaller than the size of the array, the task is to find the kth smallest element in the given array. K = 3
 
-// const knum = (array) => {
+// const k-num = (array) => {
 //     min = array[0]
 //     min2 = array[0]
 //     min3 = array[0]
@@ -948,7 +948,7 @@ no even numbers are found, print a message stating that no even numbers were fou
 //     } return min3
 // }
 
-// console.log(knum([7, 10, 4, 3, 20, 15]))
+// console.log(k-num([7, 10, 4, 3, 20, 15]))
 
 // Q43.Given an array, array of n integers, and an integer element x, find whether element x is present in the array. Return the index of the first occurrence of x in the array, or -1 if it doesn't exist.
 
@@ -1427,13 +1427,13 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // const customSplitFunction = Reverse();
 
 // const reverseString = (str) => {
-//     let revstr = [];
+//     let revertString = [];
 //     for(let x = str.length-1; x >= 0; x--) {
-//         revstr[revstr.length] = str[x]
+//         revertString[revertString.length] = str[x]
 //     }
 
-//     revstr.join("")
-//     return revstr
+//     revertString.join("")
+//     return revertString
 // }
 
 // console.log(reverseString(customSplitFunction('hello')))
@@ -1878,15 +1878,15 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // Q84. Reverse a Number
 
-// const ReverseNumber = (num, reveresed = 0) => {
+// const ReverseNumber = (num, reversed = 0) => {
 
 //   if(num === 0) {
-//     return reveresed
+//     return reversed
 //   }
 
 //   let lastDigit = num % 10
-//   reveresed = reveresed * 10 + lastDigit
-//   return ReverseNumber(Math.floor(num / 10), reveresed)
+//   reversed = reversed * 10 + lastDigit
+//   return ReverseNumber(Math.floor(num / 10), reversed)
 // }
 
 // console.log(ReverseNumber(12345))
@@ -1894,11 +1894,11 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // Q85. Reverse a String
 
 // const reverseString = (str) => {
-//   let reveresed = '';
+//   let reversed = '';
 //   for(let x = str.length - 1; x >= 0; x--) {
-//     reveresed = reveresed + str[x]
+//     reversed = reversed + str[x]
 //   }
-//   return reveresed
+//   return reversed
 // }
 
 // console.log(reverseString("Hello"))
@@ -2008,25 +2008,25 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // Q89. Reverse a String
 
 // const reverseString = (string) => {
-//     let reveresed = ''
+//     let reversed = ''
 //     for(let x = string.length - 1; x >= 0; x--) {
-//         reveresed = reveresed + string[x]
+//         reversed = reversed + string[x]
 //     }
-//     return reveresed
+//     return reversed
 // }
 
 // console.log(reverseString("Hello"))
 
 // Q90. Reverse a Number
 
-// const ReverseNumber = (num, reveresed = 0) => {
+// const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
-//         return reveresed
+//         return reversed
 //     }
     
 //     let lastDigit = num % 10
-//     reveresed = reveresed * 10 + lastDigit
-//     return ReverseNumber(Math.floor( num / 10), reveresed)
+//     reversed = reversed * 10 + lastDigit
+//     return ReverseNumber(Math.floor( num / 10), reversed)
 // }
 
 // console.log(ReverseNumber(12345))
@@ -2035,11 +2035,11 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // const ReverseNumber = (num) => {
 //     let numStr = num.toString()
-//     let reveresed = ''
+//     let reversed = ''
 //     for(let x = numStr.length - 1; x >= 0; x--) {
-//         reveresed = reveresed + numStr[x]
+//         reversed = reversed + numStr[x]
 //     }
-//     return Number(reveresed)
+//     return Number(reversed)
 // }
 
 // console.log(ReverseNumber(12345))
@@ -2168,25 +2168,25 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // Q96. Reverse a Num With Recursion.
 
-// const ReverseNumber = (num, reveresed = 0) => {
+// const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
-//         return reveresed
+//         return reversed
 //     }
     
 //     let lastDigit = num % 10
-//     reveresed = reveresed * 10 + lastDigit
-//     return ReverseNumber(Math.floor(num / 10), reveresed)
+//     reversed = reversed * 10 + lastDigit
+//     return ReverseNumber(Math.floor(num / 10), reversed)
 // }
 
 // console.log(ReverseNumber(12345))
 
 // const ReverseNumber = (num) => {
 //     let numStr = num.toString()
-//     let reveresed = ''
+//     let reversed = ''
 //     for(let x = numStr.length - 1; x >= 0; x--) {
-//         reveresed = reveresed + numStr[x]
+//         reversed = reversed + numStr[x]
 //     }
-//     return Number(reveresed)
+//     return Number(reversed)
 // }
 
 // console.log(ReverseNumber(12345))
@@ -2194,11 +2194,11 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // Q97. Reverse an Array.
 
 // const ReverseArray = (array) => {
-//     let reveresed = []
+//     let reversed = []
 //     for(let x = 0; x < array.length; x++) {
-//         reveresed[reveresed.length] = array[x]
+//         reversed[reversed.length] = array[x]
 //     }
-//     return reveresed
+//     return reversed
 // }
 
 // console.log(ReverseArray([10, 20, 30, 40, 50]))
@@ -2249,7 +2249,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(Merge([]))
 
 
-// Q99. Instertion and Deletion Operations
+// Q99. Insertion and Deletion Operations
 
 // const Operations = (array) => {
 //     let elementDelete = 30
@@ -2324,14 +2324,14 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 //Q102. Reverse Num With Recursion
 
-// const ReverseNumber = (num, reveresed = 0) => {
+// const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
-//         return reveresed
+//         return reversed
 //     }
 
 //     let lastDigit = num % 10
-//     reveresed = reveresed * 10 + lastDigit
-//     return ReverseNumber(Math.floor(num / 10), reveresed)
+//     reversed = reversed * 10 + lastDigit
+//     return ReverseNumber(Math.floor(num / 10), reversed)
 // }
 
 // console.log(ReverseNumber(12345))
@@ -2466,14 +2466,14 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // Q108. Reverse a Number With Recursion
 
-// const ReverseNumber = (num, reveresed = 0) => {
+// const ReverseNumber = (num, reversed = 0) => {
 //     if(num == 0) {
-//         return reveresed
+//         return reversed
 //     }
     
 //     let lastDigit = num % 10
-//     reveresed = reveresed * 10 + lastDigit
-//     return ReverseNumber(Math.floor(num / 10), reveresed)
+//     reversed = reversed * 10 + lastDigit
+//     return ReverseNumber(Math.floor(num / 10), reversed)
 // }
 
 // console.log(ReverseNumber(12345))
@@ -2482,11 +2482,11 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // const ReverseNumber = (num) => {
 //     num = num.toString()
-//     let reveresed = ''
+//     let reversed = ''
 //     for(let x = num.length-1; x >= 0; x--) {
-//         reveresed = reveresed + num[x]
+//         reversed = reversed + num[x]
 //     }
-//     return Number(reveresed)
+//     return Number(reversed)
 // }
 
 // console.log(ReverseNumber(12345))
@@ -2777,14 +2777,14 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // Q122. Reverse a Num.
 
-// const ReverseNumber = (num, reveresed = 0) => {
+// const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
-//         return reveresed
+//         return reversed
 //     }
     
 //     let lastDigit = num % 10
-//     reveresed = reveresed * 10 + lastDigit
-//     return ReverseNumber(Math.floor(num / 10), reveresed)
+//     reversed = reversed * 10 + lastDigit
+//     return ReverseNumber(Math.floor(num / 10), reversed)
 // }
 
 // console.log(ReverseNumber(12345))
@@ -2793,11 +2793,11 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // const ReverseNumber = (num) => {
 //     num = num.toString()
-//     let reveresed = '';
+//     let reversed = '';
 //     for(let x = num.length-1; x >= 0; x--) {
-//         reveresed = reveresed + num[x]
+//         reversed = reversed + num[x]
 //     }
-//     return Number(reveresed)
+//     return Number(reversed)
 // }
 
 // console.log(ReverseNumber(12345))
@@ -2805,11 +2805,11 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // Q124. Reverse a String.
 
 // const Reverse = (string) => {
-//     let reveresed = ''
+//     let reversed = ''
 //     for(let x = string.length-1; x >= 0; x--) {
-//         reveresed = reveresed + string[x]
+//         reversed = reversed + string[x]
 //     }
-//     return reveresed
+//     return reversed
 // }
 
 // console.log(Reverse('sanjay'))
@@ -2817,25 +2817,25 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // Q125. Reverse an array
 
 // const Reverse = (array) => {
-//     let reveresed = []
+//     let reversed = []
 //     for(let x = array.length - 1; x >= 0; x--) {
-//         reveresed[reveresed.length] = array[x]
+//         reversed[reversed.length] = array[x]
 //     }
-//     return reveresed
+//     return reversed
 // }
 
 // console.log(Reverse([1,2,3,4,5]))
 
 // Q126. Reverse a Num
 
-// const ReverseNumber = (num, reveresed = 0) => {
+// const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
-//         return reveresed
+//         return reversed
 //     }
     
 //     let lastDigit = num % 10
-//     reveresed = reveresed * 10 + lastDigit
-//     return ReverseNumber(Math.floor(num / 10), reveresed)
+//     reversed = reversed * 10 + lastDigit
+//     return ReverseNumber(Math.floor(num / 10), reversed)
 // }
 
 // console.log(ReverseNumber(12345))
@@ -2844,11 +2844,11 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // const ReverseNumber = (num) => {
 //     num = num.toString()
-//     let reveresed = ''
+//     let reversed = ''
 //     for(let x = num.length - 1; x >= 0; x--) {
-//         reveresed = reveresed + num[x]
+//         reversed = reversed + num[x]
 //     }
-//     return Number(reveresed)
+//     return Number(reversed)
 // }
 
 // console.log(ReverseNumber(12345))
@@ -3074,25 +3074,25 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // const ReverseNumber = (num) => {
 //     num = num.toString()
-//     let reveresed = ''
+//     let reversed = ''
 //     for(let x = num.length - 1; x >= 0; x--) {
-//         reveresed = reveresed + num[x]
+//         reversed = reversed + num[x]
 //     }
-//     return Number(reveresed)
+//     return Number(reversed)
 // }
 
 // console.log(ReverseNumber(12345))
 
 // Q137. reverse a num with recursion 
 
-// const ReverseNumber = (num, reveresed = 0) => {
+// const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
-//         return reveresed
+//         return reversed
 //     }
     
 //     let lastDigit = num % 10
-//     reveresed = reveresed * 10 + lastDigit
-//     return ReverseNumber(Math.floor(num / 10), reveresed)
+//     reversed = reversed * 10 + lastDigit
+//     return ReverseNumber(Math.floor(num / 10), reversed)
 // }
 
 // console.log(ReverseNumber(12345))
@@ -3100,11 +3100,11 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // Q138. Reverse a String
 
 // const reverseString = (string) => {
-//     let reveresed = ''
+//     let reversed = ''
 //     for(let x = string.length - 1; x >= 0; x--) {
-//         reveresed = reveresed + string[x]
+//         reversed = reversed + string[x]
 //     }
-//     return reveresed
+//     return reversed
 // }
 
 // console.log(reverseString('Hello'))
@@ -3114,11 +3114,11 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // const reverseString = (string) => {
 //     string = string.split('')
-//     let reveresed = []
+//     let reversed = []
 //     for(let x = string.length - 1; x >= 0; x--) {
-//         reveresed[reveresed.length] = string[x]
+//         reversed[reversed.length] = string[x]
 //     }
-//     return reveresed.join('')
+//     return reversed.join('')
 // }
 
 // console.log(reverseString('Hello'))
@@ -3126,11 +3126,11 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // Q140. Reverse an Array
 
 // const ReverseArray = (array) => {
-//     let reveresed = []
+//     let reversed = []
 //     for(let x = array.length - 1; x >= 0; x--) {
-//         reveresed[reveresed.length] = array[x]
+//         reversed[reversed.length] = array[x]
 //     }
-//     return reveresed
+//     return reversed
 // }
 
 // console.log(ReverseArray([1,2,3,4,5]))
@@ -3243,5 +3243,112 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(EvenValue([10, 19, 6, 18, 45, 68, 90, 35, 100]))
 
 
-// Q146. Bubble Sorting with Recursion in JS.
+// Q146. Merge Sort
 
+// const MergeSort = (array) => {
+//     let data1 = [5,2,9,3,6]
+//     let data2 = [50,20,90,30,60]
+
+//     for(let x = 0; x < data1.length; x++) {
+//         array[array.length] = data1[x]
+//     }
+
+//     for(let x = 0; x < data2.length; x++) {
+//         array[array.length] = data2[x]
+//     }
+
+//     for(let x = 0; x < array.length; x++) {
+//         for(let y = 0; y < array.length; y++) {
+//             if(array[y] > array[y + 1]) {
+//                 let temp = array[y]
+//                 array[y] = array[y + 1]
+//                 array[y + 1] = temp
+//             }
+//         }
+//     }
+//     return array
+// }
+
+// console.log(MergeSort([]))
+
+
+// Q147. Insertion and Deletion Operations
+
+// const Operations = (array) => {
+//     let elementDelete = 30
+//     let elementInsert = 60
+//     let position;
+
+//     for(let x = 0; x < array.length; x++) {
+//         if(array[x] == elementDelete) {
+//             position = x
+//         }
+//     }
+
+//     for(let x = position; x < array.length - 1; x++) {
+//         array[x] = array[x + 1]
+//     }
+//     array.length = array.length - 1
+    
+//     for(let x = array.length - 1; x >= position; x--) {
+//         array[x + 1] = array[x]
+//     }
+//     array[position] = elementInsert
+//     return array
+// }
+
+// console.log(Operations([10, 20, 30, 40, 50]))
+
+
+// Q148. Reverse an Array
+
+// const ReverseArray = (array) => {
+//     let reversed = []
+//     for(let x = array.length - 1; x >= 0; x--) {
+//         reversed[reversed.length] = array[x]
+//     }
+//     return reversed
+// }
+
+// console.log(ReverseArray([1,2,3,4,5]))
+
+// Q149. Reverse an String
+
+// const reverseString = (string) => {
+//     let reversed = ''
+//     for(let x = string.length - 1; x >= 0; x--) {
+//         reversed = reversed + string[x]
+//     }
+//     return reversed
+// }
+
+// console.log(reverseString('Hello World'))
+
+
+// Q150. Reverse an Number
+
+// const ReverseNumber = (num) => {
+//     num = num.toString()
+//     let reversed = ''
+//     for(let x = num.length - 1; x >= 0; x--) {
+//         reversed = reversed + num[x]
+//     }
+//     return Number(reversed)
+// }
+
+// console.log(ReverseNumber(12345))
+
+
+// Q151. Reverse an Number - 2nd Way
+
+// const ReverseNumber = (num, reversed = 0) => {
+//     if(num === 0) {
+//         return reversed
+//     }
+
+//     let lastDigit = num % 10
+//     reversed = reversed * 10 + lastDigit
+//     return ReverseNumber(Math.floor(num / 10), reversed)
+// }
+
+// console.log(ReverseNumber(12345))
