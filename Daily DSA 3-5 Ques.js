@@ -3450,3 +3450,71 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(BinarySearch(data, 0, data.length - 1))
+
+
+// Q156. Selection Sorting
+
+// const SelectionSorting = (array) => {
+//     let minId
+//     for(let x = 0; x < array.length; x++) {
+//         minId = x
+
+//         for(let y = x + 1; y < array.length; y++) {
+//             if(array[y] < array[minId]) {
+//                 minId = y
+//             }
+//         }
+//         let temp = array[minId]
+//         array[minId] = array[x]
+//         array[x] = temp
+//     }
+//     return array
+// }
+
+// console.log(SelectionSorting([20, 12, 53, 5]))
+
+// Q157. Binary Search Iterative Approach
+
+// let data = [2, 17, 28, 53]
+// let find = 53
+
+// const BinarySearch = (array, start, end) => {
+
+//     for(start = 0; start <= end;) {
+//         let minId = Math.floor((start + end) / 2)
+//         if(array[minId] == find) {
+//             return minId
+//         } else if(array[minId] < find) {
+//             start = minId + 1
+//         } else {
+//             end = minId - 1
+//         }
+//     }
+//     return array
+// }
+
+// console.log(BinarySearch(data, 0, data.length))
+
+
+// Q158. Binary Search Recursive Approach
+
+// let data = [2, 17, 28, 53]
+// let find = 53
+
+// const BinarySearch = (array, start, end) => {
+//     if(start > end) {
+//         return -1
+//     }
+    
+//     let minId = Math.floor((start + end) / 2)
+
+//     if(array[minId] == find) {
+//         return minId
+//     } else if(array[minId] < find) {
+//         return BinarySearch(array, minId + 1, end)
+//     } else {
+//         return BinarySearch(array, start, minId - 1)
+//     }
+// }
+
+// console.log(BinarySearch(data, 0, data.length))
