@@ -3518,3 +3518,39 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(BinarySearch(data, 0, data.length))
+
+
+// 159. string Palindrome Checker
+
+// let data = 'aba'
+// let result = true
+// const palindrome = (string, start, end) => {
+//     for(start = 0; end > start;) {
+//         if(string[start] != string[end]) {
+//             result = false
+//         }
+//         start++
+//         end--
+//     }
+//     return result
+// }
+
+// console.log(palindrome(data, 0, data.length-1))
+
+// 160. string Palindrome Checker --- MY WAY..!!
+
+// const palindrome = (string) => {
+//     string = string.toLowerCase()
+//     let newString = ''
+
+//     for(let x = string.length - 1; x >= 0; x--) {
+//         newString = newString + string[x]
+//     }
+
+//     if(string === newString) {
+//         return `true.! Palindrome String`
+//     }
+//     return `false.! This is Not Palindrome`
+// }
+
+// console.log(palindrome('Level'))
