@@ -3520,7 +3520,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(BinarySearch(data, 0, data.length))
 
 
-// 159. string Palindrome Checker
+// Q159. string Palindrome Checker
 
 // let data = 'aba'
 // let result = true
@@ -3537,7 +3537,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(palindrome(data, 0, data.length-1))
 
-// 160. string Palindrome Checker --- MY WAY..!!
+// Q160. string Palindrome Checker --- MY WAY..!!
 
 // const palindrome = (string) => {
 //     string = string.toLowerCase()
@@ -3554,3 +3554,66 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(palindrome('Level'))
+
+
+// Q161. Merge Sorting
+
+// const MergeSort = (array) => {
+//     let data1 = [5,2,9,3,6]
+//     let data2 = [50,20,90,30,60]
+
+//     for(let x = 0; x < data1.length; x++) {
+//         array[array.length] = data1[x]
+//     }
+
+//     for(let x = 0; x < data2.length; x++) {
+//         array[array.length] = data2[x]
+//     }
+
+//     for(let x = 0; x < array.length; x++) {
+//         for(let y = 0; y < array.length; y++) {
+//             if(array[y] > array[y + 1]) {
+//                 let temp = array[y]
+//                 array[y] = array[y + 1]
+//                 array[y + 1] = temp
+//             }
+//         }
+//     }
+//     return array
+// }
+
+// console.log(MergeSort([]))
+
+
+// Q162. Insertion and Deletion Operations
+
+// const Operations = (array) => {
+//     let elementDelete = 30
+//     let elementInsert = 60
+//     let position;
+
+//     for(let x = 0; x < array.length; x++) {
+//         if(elementDelete == array[x]) {
+//             position = x
+//             break
+//         }
+//     }
+
+//     for(let x = position; x < array.length; x++) {
+//         array[x] = array[x + 1]
+//     }
+//     array.length = array.length - 1
+    
+//     for(let x = array.length - 1; x >= 0; x--) {
+//         if(x >= position) {
+//             array[x + 1] = array[x]
+//             // if(x == position) {
+//             //     array[x] = elementInsert
+//             // }
+//         }
+//     }
+//     array[position] = elementInsert
+//     return array
+// }
+
+// console.log(Operations([10, 20, 30, 40, 50]))
