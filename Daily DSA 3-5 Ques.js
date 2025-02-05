@@ -3617,3 +3617,19 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(Operations([10, 20, 30, 40, 50]))
+
+
+// Q163. Creation of MAP in JS
+
+// let data = new Map([
+//     ['name', 'sanjay'],
+//     [true, 'Bool_Key'],
+//     [100, 'hundred']
+// ])
+
+// data.set('color', 'blue')
+// console.log(`data-size : ${data.size}`)
+// console.log(`data-has : ${data.has(100)}`)
+// console.log(`data-get : ${data.get(100)}`)
+// console.log(data)
+// // data.clear()
