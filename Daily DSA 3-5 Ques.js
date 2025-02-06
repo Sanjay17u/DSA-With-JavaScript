@@ -3633,3 +3633,66 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(`data-get : ${data.get(100)}`)
 // console.log(data)
 // // data.clear()
+
+// Q164. Reverse String 
+
+// const reverseString = (string) => {
+//     let reversed = ''
+//     for(let x = string.length - 1; x >= 0; x--) {
+//         reversed = reversed + string[x]
+//     }
+//     return reversed
+// }
+
+// console.log(reverseString('Hello'))
+
+// Q165. Reverse Array
+
+// const ReverseArray = (array) => {
+//     let reversed = []
+//     for(let x = array.length - 1; x >= 0; x--) {
+//         reversed[reversed.length] = array[x]
+//     }
+//     return reversed
+// }
+
+// console.log(ReverseArray([1,2,3,4,5]))
+
+// Q166. Reverse an Number
+
+// const ReverseNumber = (num) => {
+//     num = num.toString()
+//     let reversed = ''
+
+//     for(let x = num.length - 1; x >= 0; x--) {
+//         reversed = reversed + num[x]
+//     }
+//     return Number(reversed)
+// }
+
+// console.log(ReverseNumber(12345))
+
+// Q167. Reverse an Number -- Recursive Approaches
+
+// const ReverseNumber = (num , reversed = 0) => {
+//     if(num === 0) {
+//         return reversed
+//     }
+    
+//     let lastDigit = num % 10
+//     reversed = reversed * 10 + lastDigit
+//     return ReverseNumber(Math.floor(num / 10), reversed)
+// }
+
+// console.log(ReverseNumber(12345))
+
+
+// Q168. Convert Celsius to Fahrenheit
+// The formula to convert from Celsius to Fahrenheit is the temperature in Celsius times 9/5, plus 32.
+
+// const CelsiusToFahrenheit = (Celsius) => {
+//     let Fahrenheit = Celsius * (9/5) + 32
+//     return Fahrenheit
+// }
+
+// console.log(CelsiusToFahrenheit(30))
