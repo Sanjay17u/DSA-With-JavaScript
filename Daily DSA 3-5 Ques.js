@@ -3696,3 +3696,116 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(CelsiusToFahrenheit(30))
+
+
+// Q169. Merge Sort 
+
+// const MergeSort = (array) => {
+//     let data1 = [5,2,9,3,6]
+//     let data2 = [50,20,90,30,60]
+
+//     for(let x = 0; x < data1.length; x++) {
+//         array[array.length] = data1[x]
+//     }
+
+//     for(let x = 0; x < data2.length; x++) {
+//         array[array.length] = data2[x]
+//     }
+
+//     for(let x = 0; x < array.length; x++) {
+//         for(let y = 0; y < array.length; y++) {
+//             if(array[y] > array[y + 1]) {
+//                 let temp = array[y]
+//                 array[y] = array[y + 1]
+//                 array[y + 1] = temp
+//             }
+//         }
+//     }
+//     return array
+// }   
+
+// console.log(MergeSort([]))
+
+
+// Q170. Insertion and Deletion Operation
+
+// const Operations = (array) => {
+//     let elementDelete = 30
+//     let elementInsert = 60
+//     let position;
+
+//     for(let x = 0; x < array.length; x++) {
+//         if(array[x] == elementDelete) {
+//             position = x
+//             break
+//         }
+//     }
+
+//     for(let x = position; x < array.length - 1; x++) {
+//         array[x] = array[x + 1]
+//     }
+//     array.length = array.length - 1
+    
+
+//     for(let x = array.length - 1; x >= position; x--) {
+//         array[x + 1] = array[x]
+//     }
+//     array[position] = elementInsert
+//     return array
+// }
+
+// console.log(Operations([10, 20, 30, 40, 50]))
+
+
+// Q171. Reverse a String
+
+// const reverseString = (string) => {
+//     let reversed = ''
+//     for(let x = string.length - 1; x >= 0; x--) {
+//         reversed = reversed + string[x]
+//     }
+//     return reversed
+// }
+
+// console.log(reverseString('hello'))
+
+
+// Q172. Reverse a String -- 2nd Way
+
+// let stringValue = 'hello'
+// const reverseString = (string, left, right) => {
+//     string = string.split('')
+    
+//     while(left <= right) {
+//         let temp = string[left]
+//         string[left] = string[right]
+//         string[right] = temp
+
+//         left++
+//         right--
+//     }
+
+//     return string.join('')
+// }
+
+// console.log(reverseString(stringValue, 0, stringValue.length - 1))
+
+
+// Q173. Reverse a String -- 3rd Way -- recursion
+
+// let stringValue = 'hello'
+// const reverseString = (string, left, right) => {
+//     string = string.split('')
+
+//     if(left >= right) {
+//         return string.join('')
+//     }
+
+//     let temp = string[left]
+//     string[left] = string[right]
+//     string[right] = temp 
+
+//     return reverseString(string.join(''), left + 1, right - 1)
+// }
+
+// console.log(reverseString(stringValue, 0, stringValue.length - 1))
