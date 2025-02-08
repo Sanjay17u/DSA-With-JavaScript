@@ -3809,3 +3809,83 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(reverseString(stringValue, 0, stringValue.length - 1))
+
+
+// Q174. Reverse a String
+
+// const reverseString = (string) => {
+//     let reversed = ''
+//     for(let x = string.length - 1; x >= 0; x--) {
+//         reversed = reversed + string[x]
+//     }
+//     return reversed
+// }
+
+// console.log(reverseString('hello'))
+
+
+// Q175. Reverse a String -- 2nd -- Way
+
+// let stringValue = 'hello'
+// const reverseString = (string, left, right) => {
+//     string = string.split('')
+//     while(left <= right) {
+//         let temp = string[left]
+//         string[left] = string[right]
+//         string[right] = temp
+
+//         left++
+//         right--
+//     }
+//     return string.join('')
+// }
+
+// console.log(reverseString(stringValue, 0, stringValue.length - 1))
+
+
+// Q176. Reverse a String -- 3rd -- Way
+
+// let stringValue = 'hello'
+// const reverseString = (string, left, right) => {
+//     string = string.split('')
+
+//     if(left >= right) {
+//         return string.join('')
+// }
+    
+//     let temp = string[left]
+//     string[left] = string[right]
+//     string[right] = temp
+//     return reverseString(string.join(''), left + 1, right - 1)
+// }
+
+// console.log(reverseString(stringValue, 0, stringValue.length - 1))
+
+
+// Q177. Reverse a Num
+
+// const ReverseNumber = (num) => {
+//     num = num.toString()
+//     let reversed = ''
+//     for(let x = num.length - 1; x >= 0; x--) {
+//         reversed = reversed + num[x]
+//     }
+//     return Number(reversed)
+// }
+
+// console.log(ReverseNumber(12345))
+
+
+// Q178. Reverse a Num -- 2nd way
+
+// const ReverseNumber = (num, reversed = 0) => {
+//     if(num === 0) {
+//         return reversed
+//     }
+
+//     let lastDigit = num % 10
+//     reversed = reversed * 10 + lastDigit
+//     return ReverseNumber(Math.floor(num / 10), reversed)
+// }
+
+// console.log(ReverseNumber(12345))
