@@ -899,16 +899,16 @@ no even numbers are found, print a message stating that no even numbers were fou
 
 // console.log(missing([1, 2, 4, 6, 3, 7, 8]))
 
-// Q40. You are given an array of integers array[]. Your task is to reverse the given array.
+// Q40. You are given an array of integers array[]. Your task is to reversed the given array.
 
-// const reverse = (array) => {
+// const reversed = (array) => {
 //     let reversed = []
 //     for(let x = array.length-1; x >= 0; x--) {
 //         reversed[reversed.length] = array[x]
 //     } return reversed
 // }
 
-// console.log(reverse([1, 4, 3, 2, 6, 5]))
+// console.log(reversed([1, 4, 3, 2, 6, 5]))
 
 /* Q41. Given an array array. Your task is to find the minimum and maximum elements in the array.
     Note: Return an array that contains two elements the first one will be a minimum element and the second will be a maximum of an array */
@@ -1073,7 +1073,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(rotate([1,2,3,4,5]))
 
-// Q49. Reverse an Array With Recursion
+// Q49. reversed an Array With Recursion
 
 // let data = [5, 12, 65, 89, 0]
 // let temp;
@@ -1389,9 +1389,9 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(Operations([10, 20, 30, 40, 50]))
 
-// Q63. Reverse a String
+// Q63. reversed a String
 
-// const Reverse = (string) => {
+// const reversed = (string) => {
 //     function customSplit(str) {
 //         let result = [];
 //         let temp = '';
@@ -1424,19 +1424,19 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     return customSplit;
 // }
 
-// const customSplitFunction = Reverse();
+// const customSplitFunction = reversed();
 
-// const reverseString = (str) => {
-//     let revertString = [];
+// const ReverseString = (str) => {
+//     let ReverseString = [];
 //     for(let x = str.length-1; x >= 0; x--) {
-//         revertString[revertString.length] = str[x]
+//         ReverseString[ReverseString.length] = str[x]
 //     }
 
-//     revertString.join("")
-//     return revertString
+//     ReverseString.join("")
+//     return ReverseString
 // }
 
-// console.log(reverseString(customSplitFunction('hello')))
+// console.log(ReverseString(customSplitFunction('hello')))
 
 // Q64. Traversing and Searching in an Array.
 
@@ -1508,7 +1508,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(Operations([10, 20, 30, 40, 50]))
 
-// Q67. Reverse Array With Recursion
+// Q67. reversed Array With Recursion
 
 // let data = [5, 12, 65, 89, 0];
 
@@ -1556,20 +1556,20 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // buyApple(money)
 
-// 70. Reverse Array With Recursion
+// 70. reversed Array With Recursion
 
 // let data = [5, 12, 65, 89, 0];
-// const Reverse = (array, start, end) => {
+// const reversed = (array, start, end) => {
 //   if (start <= end) {
 //     let temp = array[start];
 //     array[start] = array[end];
 //     array[end] = temp;
-//     Reverse(array, start + 1, end - 1);
+//     reversed(array, start + 1, end - 1);
 //     }
 //     return array
 // };
 
-// console.log(Reverse(data, 0, data.length - 1));
+// console.log(reversed(data, 0, data.length - 1));
 
 // Q71. Factorial with Recursion
 
@@ -1582,21 +1582,21 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(Factorial(5))
 
-// 72. Reverse Array With Recursion
+// 72. reversed Array With Recursion
 
 // let data = [2,4,5,6,7,32,67,97,22]
 
-// const Reverse = (array, start, end) => {
+// const reversed = (array, start, end) => {
 //     if(start <= end) {
 //         let temp = array[start]
 //         array[start] = array[end]
 //         array[end] = temp
-//         Reverse(array, start+1, end-1)
+//         reversed(array, start+1, end-1)
 //     }
 //     return array
 // }
 
-// console.log(Reverse(data, 0, data.length-1))
+// console.log(reversed(data, 0, data.length-1))
 
 // Q73. Factorial with Recursion
 
@@ -1821,21 +1821,21 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // buyApple(money)
 
-// Q82. Reverse Array With Recursion
+// Q82. reversed Array With Recursion
 
 // let data = [2,4,5,6,7,32,67,97,22]
 
-// const Reverse = (array, start, end) => {
+// const reversed = (array, start, end) => {
 //     if(start < end) {
 //         let temp = array[start]
 //         array[start] = array[end]
 //         array[end] = temp
-//         Reverse(array, start + 1, end - 1)
+//         reversed(array, start + 1, end - 1)
 //     }
 //     return array
 // }
 
-// console.log(Reverse(data, 0, data.length-1))
+// console.log(reversed(data, 0, data.length-1))
 
 // Q83. stack Implementation
 
@@ -1876,7 +1876,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // customPop();
 // console.log(stack)
 
-// Q84. Reverse a Number
+// Q84. reversed a Number
 
 // const ReverseNumber = (num, reversed = 0) => {
 
@@ -1891,9 +1891,9 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseNumber(12345))
 
-// Q85. Reverse a String
+// Q85. reversed a String
 
-// const reverseString = (str) => {
+// const ReverseString = (str) => {
 //   let reversed = '';
 //   for(let x = str.length - 1; x >= 0; x--) {
 //     reversed = reversed + str[x]
@@ -1901,9 +1901,9 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //   return reversed
 // }
 
-// console.log(reverseString("Hello"))
+// console.log(ReverseString("Hello"))
 
-// Q86. Reverse String With Stack
+// Q86. reversed String With Stack
 
 // let data = []
 // let currentSize = data.length
@@ -1924,7 +1924,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // let str = 'Hello'
 // str = str.split("")
 
-// const reverseString = (item) => {
+// const ReverseString = (item) => {
 //     for(let x = 0; x < item.length; x++) {
 //         customPush(item[x])
 //     }
@@ -1934,11 +1934,11 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     }
 // } 
 
-// reverseString(str)
+// ReverseString(str)
 
 // console.log(str.join(""))
 
-// Q87. Reverse String With Stack
+// Q87. reversed String With Stack
 
 // let data = []
 // let currentSize = data.length
@@ -1959,7 +1959,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // let str = 'Hello'
 // str = str.split('')
 
-// const reverseString = (item) => {
+// const ReverseString = (item) => {
 //         for(let x = 0; x < item.length; x++) {
 //             customPush(item[x])
 //         }
@@ -1969,10 +1969,10 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //         }
 //     } 
 
-// reverseString(str)
+// ReverseString(str)
 // console.log(str)
 
-// Q88. Reverse String With Stack
+// Q88. reversed String With Stack
 
 // let data = []
 // let currentSize = data.length
@@ -1992,7 +1992,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // let str = 'Hello'
 // str = str.split('')
 
-// const reverseString = (item) => {
+// const ReverseString = (item) => {
 //     for(let x = 0; x < item.length; x++) {
 //         customPush(item[x])
 //     }
@@ -2002,12 +2002,12 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     }
 // }
 
-// reverseString(str)
+// ReverseString(str)
 // console.log(str.join(''))
 
-// Q89. Reverse a String
+// Q89. reversed a String
 
-// const reverseString = (string) => {
+// const ReverseString = (string) => {
 //     let reversed = ''
 //     for(let x = string.length - 1; x >= 0; x--) {
 //         reversed = reversed + string[x]
@@ -2015,9 +2015,9 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     return reversed
 // }
 
-// console.log(reverseString("Hello"))
+// console.log(ReverseString("Hello"))
 
-// Q90. Reverse a Number
+// Q90. reversed a Number
 
 // const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
@@ -2031,7 +2031,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseNumber(12345))
 
-// 2nd Way of Reverse a Number
+// 2nd Way of reversed a Number
 
 // const ReverseNumber = (num) => {
 //     let numStr = num.toString()
@@ -2166,7 +2166,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // customPop()
 // console.log(stack)
 
-// Q96. Reverse a Num With Recursion.
+// Q96. reversed a Num With Recursion.
 
 // const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
@@ -2191,7 +2191,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseNumber(12345))
 
-// Q97. Reverse an Array.
+// Q97. reversed an Array.
 
 // const ReverseArray = (array) => {
 //     let reversed = []
@@ -2203,7 +2203,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseArray([10, 20, 30, 40, 50]))
 
-// Reverse an Array With Recursion
+// reversed an Array With Recursion
 
 // let data = [10, 20, 30, 40, 50]
 
@@ -2322,7 +2322,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(queue)
 
 
-//Q102. Reverse Num With Recursion
+//Q102. reversed Num With Recursion
 
 // const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
@@ -2464,7 +2464,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(BinarySearch(data, 0, data.length-1))
 
 
-// Q108. Reverse a Number With Recursion
+// Q108. reversed a Number With Recursion
 
 // const ReverseNumber = (num, reversed = 0) => {
 //     if(num == 0) {
@@ -2478,7 +2478,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseNumber(12345))
 
-// Q109. Reverse a Number Without Recursion
+// Q109. reversed a Number Without Recursion
 
 // const ReverseNumber = (num) => {
 //     num = num.toString()
@@ -2775,7 +2775,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(Operations([10, 20, 30, 40, 50]))
 
 
-// Q122. Reverse a Num.
+// Q122. reversed a Num.
 
 // const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
@@ -2789,7 +2789,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseNumber(12345))
 
-// Q123. Reverse a Num.
+// Q123. reversed a Num.
 
 // const ReverseNumber = (num) => {
 //     num = num.toString()
@@ -2802,9 +2802,9 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseNumber(12345))
 
-// Q124. Reverse a String.
+// Q124. reversed a String.
 
-// const Reverse = (string) => {
+// const reversed = (string) => {
 //     let reversed = ''
 //     for(let x = string.length-1; x >= 0; x--) {
 //         reversed = reversed + string[x]
@@ -2812,11 +2812,11 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     return reversed
 // }
 
-// console.log(Reverse('sanjay'))
+// console.log(reversed('sanjay'))
 
-// Q125. Reverse an array
+// Q125. reversed an array
 
-// const Reverse = (array) => {
+// const reversed = (array) => {
 //     let reversed = []
 //     for(let x = array.length - 1; x >= 0; x--) {
 //         reversed[reversed.length] = array[x]
@@ -2824,9 +2824,9 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     return reversed
 // }
 
-// console.log(Reverse([1,2,3,4,5]))
+// console.log(reversed([1,2,3,4,5]))
 
-// Q126. Reverse a Num
+// Q126. reversed a Num
 
 // const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
@@ -2840,7 +2840,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseNumber(12345))
 
-// Q127. Reverse a Num 
+// Q127. reversed a Num 
 
 // const ReverseNumber = (num) => {
 //     num = num.toString()
@@ -3070,7 +3070,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(SelectionSorting([20, 12, 53, 5]))
 
 
-// Q136. reverse a num
+// Q136. reversed a num
 
 // const ReverseNumber = (num) => {
 //     num = num.toString()
@@ -3083,7 +3083,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseNumber(12345))
 
-// Q137. reverse a num with recursion 
+// Q137. reversed a num with recursion 
 
 // const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
@@ -3097,9 +3097,9 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseNumber(12345))
 
-// Q138. Reverse a String
+// Q138. reversed a String
 
-// const reverseString = (string) => {
+// const ReverseString = (string) => {
 //     let reversed = ''
 //     for(let x = string.length - 1; x >= 0; x--) {
 //         reversed = reversed + string[x]
@@ -3107,12 +3107,12 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     return reversed
 // }
 
-// console.log(reverseString('Hello'))
+// console.log(ReverseString('Hello'))
 
 
-// Q139. Reverse a String 
+// Q139. reversed a String 
 
-// const reverseString = (string) => {
+// const ReverseString = (string) => {
 //     string = string.split('')
 //     let reversed = []
 //     for(let x = string.length - 1; x >= 0; x--) {
@@ -3121,9 +3121,9 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     return reversed.join('')
 // }
 
-// console.log(reverseString('Hello'))
+// console.log(ReverseString('Hello'))
 
-// Q140. Reverse an Array
+// Q140. reversed an Array
 
 // const ReverseArray = (array) => {
 //     let reversed = []
@@ -3300,7 +3300,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(Operations([10, 20, 30, 40, 50]))
 
 
-// Q148. Reverse an Array
+// Q148. reversed an Array
 
 // const ReverseArray = (array) => {
 //     let reversed = []
@@ -3312,9 +3312,9 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseArray([1,2,3,4,5]))
 
-// Q149. Reverse an String
+// Q149. reversed an String
 
-// const reverseString = (string) => {
+// const ReverseString = (string) => {
 //     let reversed = ''
 //     for(let x = string.length - 1; x >= 0; x--) {
 //         reversed = reversed + string[x]
@@ -3322,10 +3322,10 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     return reversed
 // }
 
-// console.log(reverseString('Hello World'))
+// console.log(ReverseString('Hello World'))
 
 
-// Q150. Reverse an Number
+// Q150. reversed an Number
 
 // const ReverseNumber = (num) => {
 //     num = num.toString()
@@ -3339,7 +3339,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(ReverseNumber(12345))
 
 
-// Q151. Reverse an Number - 2nd Way
+// Q151. reversed an Number - 2nd Way
 
 // const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
@@ -3634,9 +3634,9 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(data)
 // // data.clear()
 
-// Q164. Reverse String 
+// Q164. reversed String 
 
-// const reverseString = (string) => {
+// const ReverseString = (string) => {
 //     let reversed = ''
 //     for(let x = string.length - 1; x >= 0; x--) {
 //         reversed = reversed + string[x]
@@ -3644,9 +3644,9 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     return reversed
 // }
 
-// console.log(reverseString('Hello'))
+// console.log(ReverseString('Hello'))
 
-// Q165. Reverse Array
+// Q165. reversed Array
 
 // const ReverseArray = (array) => {
 //     let reversed = []
@@ -3658,7 +3658,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseArray([1,2,3,4,5]))
 
-// Q166. Reverse an Number
+// Q166. reversed an Number
 
 // const ReverseNumber = (num) => {
 //     num = num.toString()
@@ -3672,7 +3672,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseNumber(12345))
 
-// Q167. Reverse an Number -- Recursive Approaches
+// Q167. reversed an Number -- Recursive Approaches
 
 // const ReverseNumber = (num , reversed = 0) => {
 //     if(num === 0) {
@@ -3727,7 +3727,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(MergeSort([]))
 
 
-// Q170. Insertion and Deletion Operation
+// Q170. Insertion and Deletion Operations
 
 // const Operations = (array) => {
 //     let elementDelete = 30
@@ -3757,9 +3757,9 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(Operations([10, 20, 30, 40, 50]))
 
 
-// Q171. Reverse a String
+// Q171. reversed a String
 
-// const reverseString = (string) => {
+// const ReverseString = (string) => {
 //     let reversed = ''
 //     for(let x = string.length - 1; x >= 0; x--) {
 //         reversed = reversed + string[x]
@@ -3767,13 +3767,13 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     return reversed
 // }
 
-// console.log(reverseString('hello'))
+// console.log(ReverseString('hello'))
 
 
-// Q172. Reverse a String -- 2nd Way
+// Q172. reversed a String -- 2nd Way
 
 // let stringValue = 'hello'
-// const reverseString = (string, left, right) => {
+// const ReverseString = (string, left, right) => {
 //     string = string.split('')
     
 //     while(left <= right) {
@@ -3788,13 +3788,13 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     return string.join('')
 // }
 
-// console.log(reverseString(stringValue, 0, stringValue.length - 1))
+// console.log(ReverseString(stringValue, 0, stringValue.length - 1))
 
 
-// Q173. Reverse a String -- 3rd Way -- recursion
+// Q173. reversed a String -- 3rd Way -- recursion
 
 // let stringValue = 'hello'
-// const reverseString = (string, left, right) => {
+// const ReverseString = (string, left, right) => {
 //     string = string.split('')
 
 //     if(left >= right) {
@@ -3805,15 +3805,15 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     string[left] = string[right]
 //     string[right] = temp 
 
-//     return reverseString(string.join(''), left + 1, right - 1)
+//     return ReverseString(string.join(''), left + 1, right - 1)
 // }
 
-// console.log(reverseString(stringValue, 0, stringValue.length - 1))
+// console.log(ReverseString(stringValue, 0, stringValue.length - 1))
 
 
-// Q174. Reverse a String
+// Q174. reversed a String
 
-// const reverseString = (string) => {
+// const ReverseString = (string) => {
 //     let reversed = ''
 //     for(let x = string.length - 1; x >= 0; x--) {
 //         reversed = reversed + string[x]
@@ -3821,13 +3821,13 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     return reversed
 // }
 
-// console.log(reverseString('hello'))
+// console.log(ReverseString('hello'))
 
 
-// Q175. Reverse a String -- 2nd -- Way
+// Q175. reversed a String -- 2nd -- Way
 
 // let stringValue = 'hello'
-// const reverseString = (string, left, right) => {
+// const ReverseString = (string, left, right) => {
 //     string = string.split('')
 //     while(left <= right) {
 //         let temp = string[left]
@@ -3840,13 +3840,13 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     return string.join('')
 // }
 
-// console.log(reverseString(stringValue, 0, stringValue.length - 1))
+// console.log(ReverseString(stringValue, 0, stringValue.length - 1))
 
 
-// Q176. Reverse a String -- 3rd -- Way
+// Q176. reversed a String -- 3rd -- Way
 
 // let stringValue = 'hello'
-// const reverseString = (string, left, right) => {
+// const ReverseString = (string, left, right) => {
 //     string = string.split('')
 
 //     if(left >= right) {
@@ -3856,13 +3856,13 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     let temp = string[left]
 //     string[left] = string[right]
 //     string[right] = temp
-//     return reverseString(string.join(''), left + 1, right - 1)
+//     return ReverseString(string.join(''), left + 1, right - 1)
 // }
 
-// console.log(reverseString(stringValue, 0, stringValue.length - 1))
+// console.log(ReverseString(stringValue, 0, stringValue.length - 1))
 
 
-// Q177. Reverse a Num
+// Q177. reversed a Num
 
 // const ReverseNumber = (num) => {
 //     num = num.toString()
@@ -3876,7 +3876,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(ReverseNumber(12345))
 
 
-// Q178. Reverse a Num -- 2nd way
+// Q178. reversed a Num -- 2nd way
 
 // const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
@@ -3889,3 +3889,109 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(ReverseNumber(12345))
+
+
+// Q179. Merge Sort 
+
+// const MergeSort = (array) => {
+//     let data1 = [5,2,9,3,6]
+//     let data2 = [50,20,90,30,60]
+//     for(let x = 0; x < data1.length; x++) {
+//         array[array.length] = data1[x]
+//     }
+
+//     for(let x = 0; x < data2.length; x++) {
+//         array[array.length] = data2[x]
+//     }
+
+//     for(let x = 0; x < array.length; x++) {
+//         for(let y = 0; y < array.length; y++) {
+//             if(array[y] > array[y + 1]) {
+//                 let temp = array[y]
+//                 array[y] = array[y + 1]
+//                 array[y + 1] = temp
+//             }
+//         }
+//     }
+//     return array
+// }
+
+// console.log(MergeSort([]))
+
+// 180. Insertion and Deletion Operations
+
+// const Operations = (array) => {
+//     let elementDelete = 30
+//     let elementInsert = 60
+//     let position;
+
+//     for(let x = 0; x < array.length; x++) {
+//         if(array[x] === elementDelete) {
+//             position = x 
+//             break
+//         }
+//     }
+
+//     for(let x = position; x < array.length; x++) {
+//         array[x] = array[x + 1]
+//     }
+//     array.length = array.length - 1
+
+//     for(let x = array.length - 1; x >= position; x--) {
+//         array[x + 1] = array[x]
+//     }
+//     array[position] = elementInsert
+//     return array
+// }
+
+// console.log(Operations([10, 20, 30, 40, 50]))
+
+// Q181. reversed String
+
+// const ReverseString = (string) => {
+//     let reversed = ''
+//     for(let x = string.length - 1; x >= 0; x--) {
+//         reversed = reversed + string[x]
+//     }
+//     return reversed
+// }
+
+// console.log(ReverseString('hello'))
+
+
+// Q182. reversed String -- 2nd Way
+
+// let stringValue = 'hello'
+// const ReverseString = (string, left, right) => {
+//     string = string.split('')
+//     while(left < right) {
+//         let temp = string[left]
+//         string[left] = string[right]
+//         string[right] = temp
+
+//         left++
+//         right--
+//     }
+//     return string.join('')
+// }
+
+// console.log(ReverseString(stringValue, 0, stringValue.length - 1))
+
+
+// Q182. reversed String -- 3rd Way
+
+// let stringValue = 'hello'
+// const ReverseString = (string, left, right) => {
+//     string = string.split('')
+    
+//     if(left >= right) {
+//         return string.join('')
+//     }
+
+//     let temp = string[left]
+//     string[left] = string[right]
+//     string[right] = temp
+//     return ReverseString(string.join(''), left+1, right-1)
+// }
+
+// console.log(ReverseString(stringValue, 0, stringValue.length - 1))
