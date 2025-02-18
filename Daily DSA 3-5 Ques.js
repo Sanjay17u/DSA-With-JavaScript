@@ -4126,3 +4126,74 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(reverseString(stringValue, 0, stringValue.length - 1))
+
+
+// Q191. Merge Sort in JS
+
+// const MergeSort = (array) => {
+//     let data1 = [5,2,9,3,6]
+//     let data2 = [50,20,90,30,60]
+
+//     for(let x = 0; x < data1.length; x++) {
+//         array[array.length] = data1[x]
+//     }
+
+//     for(let x = 0; x < data2.length; x++) {
+//         array[array.length] = data2[x]
+//     }
+
+//     for(let x = 0; x < array.length; x++) {
+//         for(let y = 0; y < array.length; y++) {
+//             if(array[y] > array[y + 1]) {
+//                 let temp = array[y]
+//                 array[y] = array[y + 1] 
+//                 array[y + 1] = temp
+//             }
+//         }
+//     }
+//     return array
+// }
+
+// console.log(MergeSort([]))
+
+
+// Q192. Insertion and Deletion Operations in JS
+
+// const Operations = (array) => {
+//     let elementDelete = 30
+//     let elementInsert = 60
+//     let position;
+
+//     for(let x = 0; x < array.length; x++) {
+//         if(array[x] == elementDelete) {
+//             position = x
+//             break
+//         }
+//     }
+
+//     for(let x = position; x < array.length; x++) {
+//         array[x] = array[x + 1]
+//     }
+
+//     array.length = array.length - 1
+
+//     for(let x = array.length - 1; x >= position; x--) {
+//         array[x + 1] = array[x]
+//     }
+
+//     array[position] = elementInsert
+//     return array
+
+// }
+
+// console.log(Operations([10, 20, 30, 40, 50]))
+
+
+// Q194. Convert Celsius to Fahrenheit.
+
+// const CelsiusToFahrenheit = (Celsius) => {
+//     let Fahrenheit = Celsius * 9/5 + 32
+//     return Fahrenheit
+// }
+
+// console.log(CelsiusToFahrenheit(30))
