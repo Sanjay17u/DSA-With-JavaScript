@@ -4197,3 +4197,195 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(CelsiusToFahrenheit(30))
+
+
+// Q195. Merge Sort
+
+
+// const MergeSort = (array) => {
+//         let data1 = [5,2,9,3,6]
+//         let data2 = [50,20,90,30,60]
+
+//         for(let x = 0; x < data1.length; x++) {
+//             array[array.length] = data1[x]
+//         }
+
+//         for(let x = 0; x < data2.length; x++) {
+//             array[array.length] = data2[x]
+//         }
+
+
+//         for(let x = 0; x <= array.length; x++) {
+//             for(let y = 0; y <= array.length; y++) {
+//                 if(array[y] > array[y + 1]) {
+//                     let temp = array[y]
+//                     array[y] = array[y + 1]
+//                     array[y + 1] = temp
+//                 }
+//             }
+//         }
+//         return array
+//     }
+
+//     console.log(MergeSort([]))
+
+
+// Q196. Insertion and Deletion Operations in JS
+
+// const Operations = (array) => {
+//     let elementDelete = 30
+//     let elementInsert = 60
+//     let position;
+
+//     for(let x = 0; x < array.length; x++) {
+//         if(array[x] == elementDelete) {
+//             position = x
+//             break
+//         }
+//     }
+
+//     for(let x = position; x < array.length; x++) {
+//         array[x] = array[x + 1]
+//     } 
+//     array.length = array.length - 1
+
+//     for(let x = array.length - 1; x >= position; x--) {
+//         array[x + 1] = array[x]
+//     }
+
+//     array[position] = elementInsert
+//     return array
+
+// }
+
+// console.log(Operations([10, 20, 30, 40, 50]))
+
+
+// Q197. Reverse an Array 
+
+// const ReverseArray = (array) => {
+//     let reversed = []
+//     for(let x = array.length - 1; x >= 0; x--) {
+//         reversed[reversed.length] = array[x]
+//     }
+//     return reversed
+// }
+
+// console.log(ReverseArray([1,2,3,4,5]))
+
+
+// Q198. Reverse an Array --- 2nd Way
+
+// let arrayValue = [1,2,3,4,5]
+// const ReverseArray = (array, left, right) => {
+//     while(left <= right) {
+//         let temp = array[left]
+//         array[left] = array[right]
+//         array[right] = temp
+
+//         left++
+//         right--
+//     }
+//     return array
+// }
+
+// console.log(ReverseArray(arrayValue, 0, arrayValue.length - 1))
+
+
+// Q199. Reverse an Array --- 3rd Way
+
+// let arrayValue = [1,2,3,4,5]
+// const ReverseArray = (array, left, right) => {
+//     if(left > right) {
+//         return array
+//     }
+    
+//     let temp = array[left]
+//     array[left] = array[right]
+//     array[right] = temp
+
+//     return ReverseArray(array, left + 1, right - 1)
+// }
+
+// console.log(ReverseArray(arrayValue, 0, arrayValue.length - 1))
+
+
+// Q200. Reverse an String
+
+// const reverseString = (string) => {
+//     let reversed = ''
+//     for(let x = string.length - 1; x >= 0; x--) {
+//         reversed = reversed + string[x]
+//     }
+//     return reversed
+// }
+
+// console.log(reverseString('hello'))
+
+// Q201. Reverse an String --- 2nd Way
+
+// let stringValue = 'hello'
+// const reverseString = (string, left, right) => {
+//     string = string.split('')
+//     while(left <= right) {
+//         let temp = string[left]
+//         string[left] = string[right]
+//         string[right] = temp
+
+//         left++
+//         right--
+//     }
+//     return string.join('')
+// }
+
+// console.log(reverseString(stringValue, 0, stringValue.length - 1))
+
+
+// Q202. Reverse an String --- 3rd Way
+
+// let stringValue = 'hello'
+// const reverseString = (string, left, right) => {
+//     string = string.split('')
+
+//     if(left >= right) {
+//         return string.join('')
+//     }
+
+//     let temp = string[left]
+//     string[left] = string[right]
+//     string[right] = temp
+
+//     return reverseString(string.join(''), left + 1, right - 1)
+// }
+
+// console.log(reverseString(stringValue, 0, stringValue.length - 1))
+
+
+// Q203. Reverse an Number
+
+
+// const ReverseNumber = (num) => {
+//     num = num.toString()
+//     let reversed = ''
+//     for(let x = num.length - 1; x >= 0; x--) {
+//         reversed = reversed + num[x]
+//     }
+//     return Number(reversed)
+// }
+
+// console.log(ReverseNumber(12345))
+
+// Q204. Reverse an Number --- 2nd Way
+
+// const ReverseNumber = (num, reversed = 0) => {
+//     if(num == 0) {
+//         return reversed
+//     }
+    
+//     let lastDigit = num % 10
+//     reversed = reversed * 10 + lastDigit
+//     return ReverseNumber(Math.floor(num / 10), reversed)
+// }
+
+// console.log(ReverseNumber(12345))
+
