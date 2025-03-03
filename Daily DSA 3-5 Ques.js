@@ -1932,7 +1932,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //     for(let x = 0; x < item.length; x++) {
 //         item[x] = customPop()
 //     }
-// } 
+// }
 
 // ReverseString(str)
 
@@ -1967,7 +1967,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //         for(let x = 0; x < item.length; x++) {
 //             item[x] = customPop()
 //         }
-//     } 
+//     }
 
 // ReverseString(str)
 // console.log(str)
@@ -2068,7 +2068,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //         }
 //     }
 //     return array
-// } 
+// }
 
 // console.log(MergeSort([]))
 
@@ -2343,20 +2343,20 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // let find = 17
 
 // const BinarySearch = (array, start, end) => {
-//     let position; 
+//     let position;
 //     for (start = 0; start <= end; ) {
 //         let mid = Math.floor((start + end) / 2);
         
 //         if (array[mid] === find) {
-//             position = mid;  
-//             return position; 
+//             position = mid;
+//             return position;
 //         } else if (array[mid] < find) {
-//             start = mid + 1;  
+//             start = mid + 1;
 //         } else {
-//             end = mid - 1;  
+//             end = mid - 1;
 //         }
 //     }
-//     return position; 
+//     return position;
 // }
 
 // console.log(BinarySearch(data, 0, data.length - 1));
@@ -2385,7 +2385,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(BinarySearch(data, 0, data.length - 1))
 
-// Q105. Sorting Merging 
+// Q105. Sorting Merging
 
 // const Merge = (array) => {
 //     let data1 = [5,2,9,3,6]
@@ -2405,7 +2405,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //                 let temp = array[y]
 //                 array[y] = array[y + 1]
 //                 array[y + 1] = temp
-//             }   
+//             }
 //         }
 //     }
 //     return array
@@ -2573,7 +2573,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(queue)
 
 
-// Q114. Merge and Sorting 
+// Q114. Merge and Sorting
 
 // const MergeSort = (array) => {
 //     let data1 = [5,2,9,3,6]
@@ -2679,7 +2679,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // let find = 53
 // const BinarySearch = (array, start, end) => {
 //     if(start > end) {
-//        return - 1 
+//        return - 1
 //     }
 
 //     let minId = Math.floor((start + end) / 2)
@@ -2718,7 +2718,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(BinarySearch(data, 0, data.length-1))
 
 
-// Q120. Merge and Sort 
+// Q120. Merge and Sort
 
 // const MergeSort = (array) => {
 //     let data1 = [5,2,9,3,6]
@@ -2840,7 +2840,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseNumber(12345))
 
-// Q127. reversed a Num 
+// Q127. reversed a Num
 
 // const ReverseNumber = (num) => {
 //     num = num.toString()
@@ -2930,7 +2930,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(SelectionSorting([20, 12, 53, 5]))
 
 
-// Q131. Merge Sorting 
+// Q131. Merge Sorting
 
 // const MergeSort = (array) => {
 //     let data1 = [5,2,9,3,6]
@@ -2949,7 +2949,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //             if(array[y] > array[y + 1]) {
 //                 let temp = array[y]
 //                 array[y] = array[y + 1]
-//                 array[y + 1] = temp 
+//                 array[y + 1] = temp
 //             }
 //         }
 //     }
@@ -2988,7 +2988,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(Operations([10, 20, 30, 40, 50]))
 
 
-// Q133. Merge and Sort 
+// Q133. Merge and Sort
 
 // const MergeSort = (array) => {
 //     let data1 = [5,2,9,3,6]
@@ -3083,7 +3083,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 // console.log(ReverseNumber(12345))
 
-// Q137. reversed a num with recursion 
+// Q137. reversed a num with recursion
 
 // const ReverseNumber = (num, reversed = 0) => {
 //     if(num === 0) {
@@ -3110,7 +3110,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(ReverseString('Hello'))
 
 
-// Q139. reversed a String 
+// Q139. reversed a String
 
 // const ReverseString = (string) => {
 //     string = string.split('')
@@ -3176,7 +3176,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //         } else {
 //             end = minId - 1
 //         }
-//     } 
+//     }
 //     return position
 // }
 
@@ -3634,7 +3634,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(data)
 // // data.clear()
 
-// Q164. reversed String 
+// Q164. reversed String
 
 // const ReverseString = (string) => {
 //     let reversed = ''
@@ -3698,7 +3698,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(CelsiusToFahrenheit(30))
 
 
-// Q169. Merge Sort 
+// Q169. Merge Sort
 
 // const MergeSort = (array) => {
 //     let data1 = [5,2,9,3,6]
@@ -3722,7 +3722,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //         }
 //     }
 //     return array
-// }   
+// }
 
 // console.log(MergeSort([]))
 
@@ -3803,7 +3803,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 //     let temp = string[left]
 //     string[left] = string[right]
-//     string[right] = temp 
+//     string[right] = temp
 
 //     return ReverseString(string.join(''), left + 1, right - 1)
 // }
@@ -3891,7 +3891,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(ReverseNumber(12345))
 
 
-// Q179. Merge Sort 
+// Q179. Merge Sort
 
 // const MergeSort = (array) => {
 //     let data1 = [5,2,9,3,6]
@@ -3927,7 +3927,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 //     for(let x = 0; x < array.length; x++) {
 //         if(array[x] === elementDelete) {
-//             position = x 
+//             position = x
 //             break
 //         }
 //     }
@@ -4146,7 +4146,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 //         for(let y = 0; y < array.length; y++) {
 //             if(array[y] > array[y + 1]) {
 //                 let temp = array[y]
-//                 array[y] = array[y + 1] 
+//                 array[y] = array[y + 1]
 //                 array[y + 1] = temp
 //             }
 //         }
@@ -4246,7 +4246,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 
 //     for(let x = position; x < array.length; x++) {
 //         array[x] = array[x + 1]
-//     } 
+//     }
 //     array.length = array.length - 1
 
 //     for(let x = array.length - 1; x >= position; x--) {
@@ -4261,7 +4261,7 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // console.log(Operations([10, 20, 30, 40, 50]))
 
 
-// Q197. Reverse an Array 
+// Q197. Reverse an Array
 
 // const ReverseArray = (array) => {
 //     let reversed = []
@@ -4602,3 +4602,223 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(ReverseNumber(12345))
+
+// Q214. Merge Sort
+
+// const MergeSort = (array) => {
+//     let data1 = [5, 4, 2, 3, 9]
+//     let data2 = [50, 40, 20, 30, 90]
+    
+//     for (let x = 0; x < data1.length; x++) {
+//         array[array.length] = data1[x]
+//     }
+
+//     for (let x = 0; x < data2.length; x++) {
+//         array[array.length] = data2[x]
+//     }
+
+
+//     for (let x = 0; x < array.length; x++) {
+//         for (let y = 0; y < array.length; y++) {
+//             if (array[y] < array[y + 1]) {
+//                 let temp = array[y]
+//                 array[y] = array[y + 1]
+//                 array[y + 1] = temp
+//             }
+//         }
+//     }
+//     return array
+
+// }
+
+// console.log(MergeSort([]))
+
+// Q215. Insertion and Deletion Operations in JS
+
+// const Operations = (array) => {
+//     let elementDelete = 30
+//     let elementInsert = 60
+//     let position
+
+//     for (let x = 0; x < array.length; x++) {
+//         if (array[x] == elementDelete) {
+//             position = x
+//             break
+//         }
+//     }
+
+//     for (let x = position; x < array.length; x++) {
+//         array[x] = array[x + 1]
+//     }
+//     array.length = array.length - 1
+        
+//     for (let x = array.length - 1; x >= position; x--) {
+//         array[x + 1] = array[x]
+//     }
+//     array[position] = elementInsert
+//     return array
+// }
+
+// console.log(Operations([10, 20, 30, 40, 50]))
+
+
+// Q216. Insertion at the start of an array
+
+// const InsertionStart = (array) => {
+//     let arrayValue = 7
+
+//     for (x = array.length - 1; x >= 0; x--) {
+//         array[x + 1] = array[x]
+//     }
+
+//     array[0] = arrayValue
+//     return array
+// }
+
+// console.log(InsertionStart([1, 2, 3]))
+
+
+// Q217. Insertion at the end of an array
+
+// const InsertionEnd = (array) => {
+//     let arrayValue = 7
+
+//     array[array.length] = arrayValue
+//     return array
+// }
+
+// console.log(InsertionEnd([1, 2, 3]))
+
+
+// Q218. Reverse an Array
+
+// const ReverseArray = (array) => {
+//     let reversed = []
+//     for (let x = array.length - 1; x >= 0; x--) {
+//         reversed[reversed.length] = array[x]
+//     }
+//     return reversed
+// }
+
+// console.log(ReverseArray([1,2,3,4,5]))
+
+// Q219. Reverse an Array -- 2nd way
+
+// let arrayValue = [1,2,3,4,5]
+// const ReverseArray = (array, left, right) => {
+//     while (left <= right) {
+//         let temp = array[left]
+//         array[left] = array[right]
+//         array[right] = temp
+
+//         left++
+//         right--
+//     }
+
+//     return array
+// }
+
+// console.log(ReverseArray(arrayValue, 0, arrayValue.length - 1))
+
+
+// Q220. Reverse an Array -- 3rd way
+
+// let arrayValue = [1,2,3,4,5]
+// const ReverseArray = (array, left, right) => {
+//     if (left >= right) {
+//         return array
+//     }
+    
+//     let temp = array[left]
+//     array[left] = array[right]
+//     array[right] = temp
+
+//     return ReverseArray(array, left + 1, right - 1)
+// }
+
+// console.log(ReverseArray(arrayValue, 0, arrayValue.length - 1))
+
+
+// Q221. Reverse an Number
+
+// const ReverseNumber = (num, reversed = 0) => {
+//     if (num == 0) {
+//         return reversed
+//     }
+    
+//     let lastDigit = num % 10
+//     reversed = reversed * 10 + lastDigit
+//     return ReverseNumber(Math.floor(num / 10), reversed)
+// }
+
+// console.log(ReverseNumber(12345))
+
+
+// Q222. Reverse an Number -- 2nd way
+
+// const ReverseNumber = (num) => {
+//     num = num.toString()
+//     let reversed = ''
+//     for (let x = num.length - 1; x >= 0; x--) {
+//         reversed = reversed + num[x]
+//     }
+//     return Number(reversed)
+// }
+
+// console.log(ReverseNumber(12345))
+
+
+// Q223. Reverse a String
+
+// const ReverseString = (str) => {
+//     let reversed = ''
+
+//     for (let x = str.length - 1; x >= 0; x--) {
+//         reversed = reversed + str[x]
+//     }
+
+//     return reversed
+// }
+
+// console.log(ReverseString('hello'))
+
+
+// Q223. Reverse a String -- 2nd Way
+
+// let stringValue = 'hello'
+// const ReverseString = (str, left, right) => {
+//     str = str.split('')
+    
+//     while (left <= right) {
+//         let temp = str[left]
+//         str[left] = str[right]
+//         str[right] = temp
+
+//         left++
+//         right--
+//     }
+
+//     return str.join('')
+// }
+
+// console.log(ReverseString(stringValue, 0, stringValue.length - 1))
+
+
+// Q223. Reverse a String -- 3rd Way
+
+// let stringValue = 'hello'
+// const ReverseString = (str, left, right) => {
+//     str = str.split('')
+
+//     if (left >= right) {
+//         return str.join('')
+//     }
+
+//     let temp = str[left]
+//     str[left] = str[right]
+//     str[right] = temp
+
+//     return ReverseString(str.join(''), left + 1, right - 1)
+// }
+
+// console.log(ReverseString(stringValue, 0, stringValue.length - 1))
