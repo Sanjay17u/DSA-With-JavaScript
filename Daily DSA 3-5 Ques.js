@@ -4822,3 +4822,32 @@ Note: Elements of a[] and b[] are not necessarily distinct. */
 // }
 
 // console.log(ReverseString(stringValue, 0, stringValue.length - 1))
+
+
+// Q224. Merge Sort
+
+// const MergeSort = (array) => {
+//     let data1 = [6, 3, 2, 9, 5]
+//     let data2 = [60, 30, 20, 90, 50]
+
+//     for (let x = 0; x <= data1.length - 1; x++) {
+//         array[array.length] = data1[x]
+//     }    
+
+//     for (let x = 0; x <= data2.length - 1; x++) {
+//         array[array.length] = data2[x]
+//     }
+
+//     for (let x = 0; x <= array.length - 1; x++) {
+//         for (let y = 0; y <= array.length - 1; y++) {
+//             if (array[y] > array[y + 1]) {
+//                 let temp = array[y]
+//                 array[y] = array[y + 1]
+//                 array[y + 1] = temp
+//             }
+//         }
+//     }
+//     return array
+// }
+
+// console.log(MergeSort([]))
